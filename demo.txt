@@ -1,7 +1,30 @@
-cách để tạo một Local Repository : git init
-khi khởi tạo local 
+ 
+1. Cách để tạo một local repository: git init
+2. khi khởi tạo local repo thành công sẽ xuất hiện 1 thư mục ẩn .git trên trong thư mục
+3. Cách kết nối remote repo với local repo lợi với nhau: dùng lệnh git remote add origin kèm url đường dẫn tơi source code trên remote
+Changes to be committed:
+Untracked files:
+Các bước đẩy code lên Remote repo
+Bước 1: sẽ đẩy các file có sự thay đổi lên staging area, dùng lệnh git add + tên file nếu muốn đẩy từng file  
+Để kiểm tra sự thay đổi ta có thể dùng lệnh git status
+- muốn đảo ngược lại việc thêm các file có sự thay đổi lên staging area dùng lệnh git reset
+- git add . để đẩy tất cả các file lên
+-git status: kiểm tra trạng thái các file đã đẩy lên chưa
+B2: tạo ra commit để ghi chú lại sự thay đổi code, chúng ta dùng lệnh git commit -m "lời nhắn"
+- git log kiểm tra các commit
+
+B3: Đẩy code lên remote repo lên remote repo để lưu trữ, lần đầu sẽ dùng - git push -u origin master , những lần sau chỉ dùng lệnh git push origin
+ b1: git add .
+ b2: git commit -m "Day code lan 3!"
+ b3: git push origin
 
 
-b1: sẽ đẩy các file có sự thay đổi lên staging area,dùng lệnh git add + tên file nếu muốn đẩy từng file , muốn đẩy tất cả file thì dùng lệnh git add . , để kiểm tra sự thay đổi ta có thể dùng lệnh git status . Muốn đảo ngược lại việc thêm các file có sự thay đổi lên staging area dùng lệnh git reset
+
+*CÁC BƯỚC ĐỂ ĐẨY CODE CHÚNG TA LÊN REMOTE REPO 
+- Bước 1: sẽ đẩy các file có sự thay đổi lên staging area,dùng lệnh git add + tên file nếu muốn đẩy từng file , muốn đẩy tất cả file thì dùng lệnh git add . , để kiểm tra sự thay đổi ta có thể dùng lệnh git status . Muốn đảo ngược lại việc thêm các file có sự thay đổi lên staging area dùng lệnh git reset
+
+-B2: tạo ra commit để ghi chú lại sự thay đổi code , chúng ta dùng lệnh commit -m "lời nhắn muốn nói" , muốn ktra các commit đang có sẽ dùng lệnh git log 
+
+-B3: đẩy code từ local repo lên remote repo để lưu trữ , lần đầu sẽ dùng lệnh git push -u origin + tên nhánh, những lần sau chichỉ cần dùng lệnh git push origin
 
 
