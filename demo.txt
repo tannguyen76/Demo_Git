@@ -1,0 +1,7 @@
+cách để tạo một Local Repository : git init
+khi khởi tạo local 
+
+
+b1: sẽ đẩy các file có sự thay đổi lên staging area,dùng lệnh git add + tên file nếu muốn đẩy từng file , muốn đẩy tất cả file thì dùng lệnh git add . , để kiểm tra sự thay đổi ta có thể dùng lệnh git status . Muốn đảo ngược lại việc thêm các file có sự thay đổi lên staging area dùng lệnh git reset
+
+
